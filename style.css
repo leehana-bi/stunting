@@ -1,0 +1,378 @@
+@font-face {
+  font-family: "Pagkaki";
+  src: url("fonts/PAGKAKI-Regular.ttf") format("truetype");
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  scroll-padding-top: 60px;
+}
+
+/* Styling untuk navbar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #4caf50; /* Warna latar belakang hijau */
+  padding: 0px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling untuk logo */
+nav .logo h1 {
+  color: #ffde59;
+  margin: 0;
+  padding-top: 10px;
+  font-size: 2rem;
+  font-weight: lighter;
+  font-family: "Pagkaki", sans-serif;
+}
+
+/* Styling untuk menu */
+nav .menu ul {
+  list-style: none; /* Menghilangkan bullet point pada daftar */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 15px;
+}
+
+/* Styling untuk tautan menu */
+nav .menu ul a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect pada menu */
+nav .menu ul a:hover {
+  background-color: #45a049; /* Warna hijau lebih gelap saat hover */
+  color: #ffde59;
+}
+
+/* Styling untuk konten */
+section {
+  padding: 20px;
+}
+
+section h1 {
+  color: #4caf50;
+  text-align: center;
+}
+
+#beranda {
+  text-align: center;
+}
+
+#beranda img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+#beranda span {
+  display: block;
+  font-size: 35px;
+  font-weight: lighter;
+  color: #4caf50;
+  font-family: "Pagkaki", sans-serif;
+}
+
+#beranda p {
+  font-size: 20px;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Styling untuk section Edukasi */
+#edukasi {
+  margin: 0 auto;
+  max-width: 90%;
+}
+
+#edukasi h1 {
+  font-size: 2.2rem;
+  color: #4caf50;
+  font-family: "Pagkaki", sans-serif;
+  font-weight: lighter;
+  text-decoration: underline solid 4px #ffde59;
+  text-underline-offset: 10px;
+}
+
+strong {
+  font-size: large;
+  text-decoration: underline solid 2px #ffde59;
+}
+
+#edukasi p {
+  font-size: 15px;
+  color: #333;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  font-family: "Arial", sans-serif;
+  text-align: justify;
+}
+
+#edukasi ul {
+  line-height: 1.6;
+  font-size: 15px;
+}
+
+#edukasi strong {
+  font-weight: bold;
+  color: #4caf50;
+}
+
+#edukasi iframe {
+  width: 100%;
+  max-width: 600px;
+  height: 400px;
+  margin: 20px 0;
+  border-radius: 8px;
+}
+
+#edukasi br {
+  margin-bottom: 10px;
+}
+
+/* Styling untuk Article Card */
+.article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.article-card {
+  background-color: #f9f9f9;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  width: 50%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.article-card h3 {
+  font-size: 24px;
+  color: #4caf50;
+  margin-bottom: 10px;
+  font-family: "Pagkaki", sans-serif;
+  font-weight: lighter;
+}
+
+.article-card p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.article-card a {
+  font-size: 16px;
+  color: #4caf50;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.article-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+#pantau-anak {
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  max-width: 900px;
+}
+
+#pantau-anak h1 {
+  font-size: 2rem;
+  color: #4caf50;
+  margin-bottom: 20px;
+  font-family: "Pagkaki", sans-serif;
+  font-weight: lighter;
+  border-bottom: 2px solid #ffde59;
+  padding-bottom: 10px;
+}
+
+#pantau-anak p {
+  font-size: 1.1rem;
+  text-align: center;
+  color: #333;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: "Arial", sans-serif;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+form label {
+  font-size: 1.1rem;
+  color: #333;
+  text-align: left;
+  width: 100%;
+  max-width: 400px;
+}
+
+form input {
+  padding: 10px;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+form input:focus {
+  outline: none;
+  border-color: #4caf50;
+}
+
+form button {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+form button:hover {
+  background-color: #45a049;
+}
+
+#pantau-anak strong {
+  font-size: 1.2rem;
+  color: #45a049;
+  margin-left: 20px;
+  text-align: left;
+}
+
+#pantau-anak ul {
+  font-size: 1rem;
+  text-align: left;
+  color: #333;
+  line-height: 1.6;
+  max-width: 800px;
+  font-family: "Arial", sans-serif;
+}
+
+#result {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #f4f4f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 30px auto;
+  text-align: center;
+}
+
+#result h3 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #4caf50;
+}
+
+#result p {
+  font-size: 1.2rem;
+  color: #333;
+  line-height: 1.6;
+  margin: 10px 0;
+}
+
+#result .recommendation {
+  font-weight: bold;
+  color: #ff5722;
+}
+
+#result .status {
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+#result .good {
+  color: #4caf50;
+}
+
+#result .bad {
+  color: #f44336;
+}
+
+#result .average {
+  color: #ff9800;
+}
+
+#kontak {
+  text-align: center;
+  margin: 0 auto;
+}
+
+#kontak h1 {
+  font-size: 2.2rem;
+  color: #4caf50;
+  font-family: "Pagkaki", sans-serif;
+  font-weight: lighter;
+  text-decoration: underline solid 4px #ffde59;
+  text-underline-offset: 10px;
+}
+
+#kontak p {
+  font-size: 1.2rem;
+  color: #333;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: "Arial", sans-serif;
+}
+
+#kontak strong {
+  font-weight: bold;
+  color: #4caf50;
+}
+
+#kontak .faq {
+  margin-top: 30px;
+  text-align: left;
+}
+
+#kontak .faq span {
+  font-weight: bold;
+  color: #4caf50;
+  font-size: 1.1rem;
+}
+
+footer {
+  background-color: #4caf50;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 20px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}

@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stunting Guard</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+  </head>
+  <body>
+    <!-- Navigation bar -->
+    <nav>
+      <div class="logo">
+        <h1>STUNTING-GUARD</h1>
+      </div>
+      <div class="menu">
+        <ul>
+          <a href="#beranda">Beranda</a>
+          <a href="#edukasi">Edukasi</a>
+          <a href="#pantau-anak">Pantau Anak</a>
+          <a href="#kontak">Kontak Kami</a>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Konten Beranda -->
+    <section id="beranda">
+      <!-- <h1>Beranda</h1> -->
+      <span>Selamat datang di website pencegahan stunting!</span>
+      <p>
+        Kami menyediakan informasi dan alat bantu untuk membantu Anda mencegah
+        stunting pada anak. Pelajari lebih lanjut di menu Edukasi atau pantau
+        perkembangan anak Anda di menu Pantau Anak.
+      </p>
+      <img src="img/banner.png" alt="banner" />
+    </section>
+
+    <!-- Konten Edukasi -->
+    <section id="edukasi">
+      <h1>Edukasi</h1>
+      <strong>Apa itu Stunting?</strong> <br />
+      <p>
+        Stunting adalah kondisi gagal tumbuh pada anak akibat kekurangan gizi
+        kronis, infeksi berulang, dan stimulasi yang kurang optimal. Anak
+        stunting cenderung lebih pendek dibandingkan anak seusianya. Stunting
+        terjadi akibat kekurangan gizi yang berlangsung lama, infeksi berulang,
+        serta faktor lingkungan yang tidak mendukung, terutama pada 1000 hari
+        pertama kehidupan (9 bulan dalam kandungan hingga usia 2 tahun). Kondisi
+        ini dapat menyebabkan dampak jangka panjang pada kemampuan fisik dan
+        kognitif anak, yang pada akhirnya mengurangi kualitas sumber daya
+        manusia di masa depan.
+      </p>
+      <strong>Video Edukasi Stunting</strong><br />
+      <iframe
+        width="600"
+        height="400"
+        src="https://www.youtube.com/embed/HwEka4xz_sc"
+        title="Apa itu Stunting?"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+      ></iframe
+      >&nbsp;&nbsp;
+      <iframe
+        width="600"
+        height="400"
+        src="https://www.youtube.com/embed/4hWnbHXVYko"
+        title="Cara Mencegah Stunting"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+      ></iframe>
+      <strong>Penyebab Stunting:</strong> <br />
+      <ul>
+        <li>Kurangnya asupan gizi selama kehamilan.</li>
+        <li>Pola makan tidak seimbang pada anak.</li>
+        <li>Kurangnya sanitasi dan kebersihan.</li>
+      </ul>
+
+      <strong>Cara Mencegah:</strong> <br />
+      <ul>
+        <li>Berikan ASI eksklusif selama 6 bulan pertama.</li>
+        <li>Berikan MPASI bergizi sesuai usia.</li>
+        <li>Pastikan lingkungan bersih dan sanitasi yang baik.</li>
+      </ul>
+      <div class="article">
+        <div class="article-card">
+          <h3>Stunting Anak di Indonesia: Krisis Tersembunyi</h3>
+          <p>
+            Artikel ini membahas masalah stunting yang semakin berkembang di
+            Indonesia, dampaknya pada anak-anak, dan upaya yang diperlukan untuk
+            mengatasi krisis kesehatan masyarakat ini. Baca artikel lengkapnya
+            untuk memahami penyebab dan solusi yang dapat diterapkan.
+          </p>
+          <a
+            href="https://www.ourbetterworld.org/story/child-stunting-indonesia-hidden-crisis?gad_source=1&gclid=Cj0KCQiAkJO8BhCGARIsAMkswyjZV08ii0iT8XqZ0cSuArhhblZpkXy5wtf0bYUUJBTxHeHWxo2M0c8aArtYEALw_wcB"
+            target="_blank"
+            >Baca Artikel Selengkapnya</a
+          >
+        </div>
+        <div class="article-card">
+          <h3>Mengenal Stunting - Pengertian, Penyebab, dan Pencegahannya</h3>
+          <p>
+            Stunting adalah gagal tumbuh akibat kurangnya asupan gizi, di mana
+            dalam jangka pendek dapat menyebabkan terganggunya perkembangan
+            otak, ...
+          </p>
+          <a
+            href="https://www.siloamhospitals.com/informasi-siloam/artikel/apa-itu-stunting"
+            target="_blank"
+            >Baca Artikel Selengkapnya</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Konten Pantau Anak -->
+    <section id="pantau-anak">
+      <h1>Pantau Anak</h1>
+      <p>
+        Gunakan alat ini untuk melacak status gizi dan perkembangan anak Anda:
+      </p>
+      <form id="giziForm">
+        <label for="name">Nama Anak:</label><br />
+        <input type="text" id="name" name="name" required /><br /><br />
+
+        <label for="age">Usia Anak (bulan):</label><br />
+        <input type="number" id="age" name="age" required /><br /><br />
+
+        <label for="weight">Berat Badan Anak (kg):</label><br />
+        <input
+          type="number"
+          step="0.1"
+          id="weight"
+          name="weight"
+          required
+        /><br /><br />
+
+        <label for="height">Tinggi Badan Anak (cm):</label><br />
+        <input type="number" id="height" name="height" required /><br /><br />
+
+        <button type="submit">Cek Status Gizi</button>
+      </form>
+
+      <div id="result"></div>
+
+      <strong>Rekomendasi Nutrisi:</strong> <br />
+      <ul>
+        <li>
+          Usia 6-12 bulan: Bubur nasi dengan sayur dan protein seperti ikan atau
+          telur.
+        </li>
+        <li>
+          Usia 1-3 tahun: Nasi, ayam, sayur bayam, dan buah-buahan seperti
+          pisang atau jeruk.
+        </li>
+        <li>
+          Hindari makanan tinggi gula dan garam untuk anak di bawah 2 tahun.
+        </li>
+      </ul>
+    </section>
+
+    <!-- Konten Kontak Kami -->
+    <section id="kontak">
+      <h1>Kontak Kami</h1>
+      <p>
+        Jika Anda memiliki pertanyaan atau membutuhkan bantuan lebih lanjut,
+        silakan hubungi kami:
+      </p>
+      <p>
+        <strong>Telepon:</strong> 021-123456 <br />
+        <strong>Email:</strong> info@pencegahanstunting.id <br />
+        <strong>Alamat:</strong> Kantor Dinas Kesehatan, Jakarta. <br />
+        <strong>Jam Operasional:</strong> Senin-Jumat, 08.00-17.00.
+      </p>
+      <p class="faq">
+        <strong>Pertanyaan Umum:</strong> <br />
+        <span>1. Apa tanda-tanda anak stunting?</span> <br />
+        Anak lebih pendek dari teman seusianya dan berat badan tidak sesuai
+        standar.
+        <br />
+        <span>2. Apakah stunting bisa dicegah?</span>
+        <br />
+        Ya, dengan nutrisi baik sejak kehamilan dan pola makan seimbang untuk
+        anak.
+      </p>
+    </section>
+
+    <footer>All Right Reserved &copy; 2025 Stunting Guard</footer>
+
+    <script>
+      document
+        .getElementById("giziForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault(); // Mencegah halaman reload saat form disubmit
+
+          // Ambil data dari form
+          const name = document.getElementById("name").value;
+          const age = parseInt(document.getElementById("age").value);
+          const weight = parseFloat(document.getElementById("weight").value);
+          const height = parseFloat(document.getElementById("height").value);
+
+          // Hitung status gizi berdasarkan data yang dimasukkan
+          const bmi = weight / Math.pow(height / 100, 2); // Rumus BMI
+
+          let status = "";
+          let recommendation = "";
+
+          if (age <= 5) {
+            if (bmi < 16) {
+              status = "Status Gizi: Buruk";
+              recommendation =
+                "Rekomendasi: Konsultasikan dengan dokter dan pastikan pemberian ASI eksklusif serta MPASI bergizi.";
+            } else if (bmi >= 16 && bmi < 18.5) {
+              status = "Status Gizi: Kurang Baik";
+              recommendation =
+                "Rekomendasi: Pastikan anak mendapatkan makanan bergizi dengan porsi yang cukup.";
+            } else {
+              status = "Status Gizi: Baik";
+              recommendation =
+                "Rekomendasi: Pertahankan pola makan sehat dan seimbang.";
+            }
+          } else {
+            if (bmi < 18.5) {
+              status = "Status Gizi: Kurang Gizi";
+              recommendation =
+                "Rekomendasi: Berikan makanan tinggi kalori, protein, dan vitamin.";
+            } else if (bmi >= 18.5 && bmi < 24.9) {
+              status = "Status Gizi: Normal";
+              recommendation =
+                "Rekomendasi: Pertahankan pola makan yang sehat dan olahraga rutin.";
+            } else {
+              status = "Status Gizi: Overweight";
+              recommendation =
+                "Rekomendasi: Kurangi konsumsi makanan tinggi kalori dan tingkatkan aktivitas fisik.";
+            }
+          }
+
+          // Tampilkan hasil
+          const resultDiv = document.getElementById("result");
+          if (status === "Baik") {
+            resultDiv.innerHTML = `<h3>${name}</h3><p class="status good">${status}</p><p class="recommendation">${recommendation}</p>`;
+          } else if (status === "Buruk") {
+            resultDiv.innerHTML = `<h3>${name}</h3><p class="status bad">${status}</p><p class="recommendation">${recommendation}</p>`;
+          } else {
+            resultDiv.innerHTML = `<h3>${name}</h3><p class="status average">${status}</p><p class="recommendation">${recommendation}</p>`;
+          }
+        });
+    </script>
+  </body>
+</html>
